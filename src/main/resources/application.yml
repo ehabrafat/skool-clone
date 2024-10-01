@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    username: ${POSTGRES_NAME}
+    password: ${POSTGRES_PASSWORD}
+    url: ${POSTGRES_URL}
+    driver-class-name: org.postgresql.Driver
+  servlet:
+    multipart:
+      max-file-size: ${MAX_FILE_SIZE}
+      max-request-size: ${MAX_REQUEST_SIZE}
+cloud:
+  aws:
+    region: ${AWS_REGION}
+    credentials:
+      access-key: ${AWS_ACCESS_KEY}
+      secret-key: ${AWS_SECRET_KEY}
+    bucket:
+      name: ${AWS_BUCKET_NAME}
+
+frontend-url: ${FRONTEND_URL}
